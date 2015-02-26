@@ -142,4 +142,27 @@ public class MyHashMap
         claves.removeAll(claves);
         contenidos = new int[999999];
     }
+    
+    /**
+     * Devuelve el contenido de la clave que indiquemos
+     * @clave String clave del contenido
+     */
+    public boolean containsKey(String clave)
+    {
+        boolean devolver = false;
+        int cont = 0;
+        String elemento = null;
+        boolean encontrado = false;
+        while (cont < claves.size() && !encontrado)
+        {
+            elemento = claves.get(cont);
+            if (elemento == clave)
+            {
+                encontrado = true;
+                devolver = true;
+            }
+            cont++;
+        }
+        return devolver;
+    }
 }
