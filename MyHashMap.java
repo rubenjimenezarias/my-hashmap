@@ -75,11 +75,20 @@ public class MyHashMap
         }
         return devolver;
     }
+    
     /**
      * Devuelve un boolean dependiendo si la lista esta llena o vacia
      */
     public boolean isEmpty()
     {
         return (claves.size() == 0);
+    }
+    
+    /**
+     * Devuelve el numero de elementos de la lista
+     */
+    public int size()
+    {
+        return claves.size();
     }
 }
