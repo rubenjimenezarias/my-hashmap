@@ -144,7 +144,7 @@ public class MyHashMap
     }
     
     /**
-     * Devuelve el contenido de la clave que indiquemos
+     * Devuelve true o false segun si contiene la clave que le indicamos
      * @clave String clave del contenido
      */
     public boolean containsKey(String clave)
@@ -157,6 +157,27 @@ public class MyHashMap
         {
             elemento = claves.get(cont);
             if (elemento == clave)
+            {
+                encontrado = true;
+                devolver = true;
+            }
+            cont++;
+        }
+        return devolver;
+    }
+    
+    /**
+     * Devuelve true o false segun si la lista contine el contenidos que le indicamos
+     * @contenido int contenido de la clave
+     */
+    public boolean containsValue(int valor)
+    {
+        boolean devolver = false;
+        int cont = 0;
+        boolean encontrado = false;
+        while (cont < claves.size() && !encontrado)
+        {
+            if (valor == contenidos[cont])
             {
                 encontrado = true;
                 devolver = true;
