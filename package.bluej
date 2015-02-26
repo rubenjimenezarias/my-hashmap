@@ -1,18 +1,18 @@
 #BlueJ package file
 objectbench.height=100
 objectbench.width=353
-package.editor.height=529
+package.editor.height=532
 package.editor.width=560
-package.editor.x=-3
-package.editor.y=1
+package.editor.x=678
+package.editor.y=0
 package.numDependencies=0
 package.numTargets=1
 package.showExtends=true
 package.showUses=true
 project.charset=UTF-8
-target1.editor.height=728
+target1.editor.height=731
 target1.editor.width=738
-target1.editor.x=637
+target1.editor.x=-2
 target1.editor.y=0
 target1.height=50
 target1.name=MyHashMap

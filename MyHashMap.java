@@ -91,4 +91,48 @@ public class MyHashMap
     {
         return claves.size();
     }
+    
+    /**
+     * Borra un elemento con la clave que indiquemos y devuelve su valor
+     * Si no hay ese elemento devuelve -1
+     */
+    public int remove(String clave)
+    {
+        int devolver = -1;
+        int cont = 0;
+        String elemento = null;
+        boolean encontrado = false;
+        while (cont < claves.size() && !encontrado)
+        {
+            elemento = claves.get(cont);
+            if (elemento == clave)
+            {
+                //Indicamos lo que vamos a devolver
+                devolver = contenidos[cont];
+                //Ya hemos encontrado lo que tenemos que borrar y queremos salir del bucle
+                encontrado = true;
+                //Borramos clave de la arraylist claves
+                claves.remove(cont);
+                //Borramos contenido de la array contenidos
+                int nuevocont = 0;
+                int[] nuevalista = new int[contenidos.length - 1];
+                boolean borrado = false;
+                while (nuevocont < cont)
+                {
+                    nuevalista[nuevocont] = contenidos[nuevocont];
+                    nuevocont++;
+                }
+                while (nuevocont < nuevalista.length)
+                {
+                    nuevalista[nuevocont]=contenidos[nuevocont+1];
+                    nuevocont++;
+                }
+                contenidos = nuevalista;
+            }
+            cont++;
+        }
+        return devolver;
+    }
+    
+    
 }
