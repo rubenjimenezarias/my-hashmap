@@ -134,5 +134,12 @@ public class MyHashMap
         return devolver;
     }
     
-    
+    /**
+     * Vacia las dos listas.
+     */
+    public void clear()
+    {
+        claves.removeAll(claves);
+        contenidos = new int[999999];
+    }
 }
