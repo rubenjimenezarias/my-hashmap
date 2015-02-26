@@ -27,7 +27,7 @@ public class MyHashMap
      * @clave String de la clave
      * @contenido int 
      */
-    public int put(String clave, int contenido)
+    public int put(String clave, int valor)
     {
         int devolver = -1;
         int cont = 0;
@@ -40,7 +40,7 @@ public class MyHashMap
             {
                 devolver = contenidos[cont];
                 claves.set(cont, clave);
-                contenidos[cont] = contenido;
+                contenidos[cont] = valor;
                 encontrado = true;
             }
             cont++;
@@ -48,7 +48,7 @@ public class MyHashMap
         if (!encontrado)
         {
             claves.add(clave);
-            contenidos[claves.size()-1]= contenido;
+            contenidos[claves.size()-1]= valor;
         }
         return devolver;
     }

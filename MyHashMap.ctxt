@@ -2,7 +2,7 @@
 comment0.params=
 comment0.target=MyHashMap()
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ MyHashMap\r\n
-comment1.params=clave\ contenido
+comment1.params=clave\ valor
 comment1.target=int\ put(java.lang.String,\ int)
 comment1.text=\r\n\ Asociamos\ una\ clave\ con\ un\ contenido\ a\ la\ siguiente\ posicion\r\n\ \r\n\ @clave\ String\ de\ la\ clave\r\n\ @contenido\ int\ \r\n
 comment2.params=clave
